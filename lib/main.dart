@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'index.dart';
+import '../project_config.dart';
+import 'views/auth/login.dart';
 
 void main() {
   runApp(const Daisy());
@@ -10,9 +11,10 @@ class Daisy extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      title: applicationName,
       debugShowCheckedModeBanner: false,
-      home: IndexPage(),
+      home: LoginPage(),
     );
   }
 }
