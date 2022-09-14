@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import '../project_config.dart';
 import 'views/auth/login.dart';
 
@@ -11,7 +12,7 @@ class Daisy extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: applicationName,
       debugShowCheckedModeBanner: false,
       home: LoginPage(),
